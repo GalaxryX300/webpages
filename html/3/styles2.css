@@ -1,0 +1,53 @@
+/* 类别选择器为部门设置背景颜色 */
+.tech-dept {
+    background-color: #e0f7e9;
+}
+.marketing-dept {
+    background-color: #e3f2fd;
+}
+.hr-dept {
+    background-color: #ffe0b2;
+}
+
+/* 并集选择器为多个部门设置共同样式 */
+.tech-dept, .marketing-dept {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* 后代选择器为每个部门的员工卡片设置样式 */
+.department .employee-card {
+    color: #424242;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* 评分高于4.5的员工卡片，特殊标记 */
+.high-rating {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+/* 特殊员工卡片样式 */
+#special-employee {
+    border: 2px solid #8e24aa;
+    background-color: #f5f5f5;
+}
+
+/* 鼠标悬停效果 */
+.employee-card:hover {
+    background-color: #fff9c4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 伪类选择器 :nth-child 为奇数项背景设置浅灰色 */
+.employee-card:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+/* 高评分员工鼠标悬停效果 */
+.high-rating:hover {
+    color: #ffd700;
+    font-weight: bold;
+    text-decoration: underline;
+}
